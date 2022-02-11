@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram</title>
+        <style>
+            #screen{
+                position: relative;
+                left: 590px;
+                top: 90px;
+            }
+            #log{
+                text-align: center;
+                position: absolute;
+                left: 1000px;
+                top: 100px;
+                border: solid;
+                width: 350px;
+                padding-top: 380px;
+                border-width: 1px;
+                border-color: rgba(189, 187, 187, 0.787);
+            }
+            #logo{
+                position: absolute;
+                top: 25px;
+                right: 90px;
+            }
+            .login{
+                position: absolute;
+                top: 100px;
+                left: 25px;
+                font-size: 16px;
+                border: solid;
+                border-width: 1px;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: rgb(225, 230, 230);
+                opacity: 0.5;
+                border-color: rgba(189, 187, 187, 0.787);
+                cursor: text;
+            }
+            .password{
+                top: 150px;
+                width: 280px;
+                text-align: left;
+                cursor: text;
+            }
+            .enter{
+                top: 220px;
+                padding: 5px;
+                width: 300px;
+                background-color: rgb(26, 146, 194);
+                color:rgb(225, 230, 230);
+                cursor: pointer;
+            }
+            .line{
+                position: absolute;
+               bottom: 91px;
+               left: 30px;
+               width: 100px;
+               opacity: 0.5;
+            }
+            .second{
+                left: 220px;
+            }
+            #or{
+                position: absolute;
+                bottom: 70px;
+                left: 160px;
+                font-size: 22px;
+                opacity: 0.7;
+            }
+            #facebook{
+                position: absolute;
+                bottom: 45px;
+                right: 80px;
+            }
+            #forget{
+                position: absolute;
+                bottom: 7px;
+                left: 125px;
+                font-size: 9px;
+                color: rgba(0, 55, 107);
+                cursor: pointer;
+            }
+            #under_logo{
+                position: absolute;
+                left:1000px;
+                bottom: 380px;
+                border: solid;
+                border-color: rgba(189, 187, 187, 0.787);
+                border-width: 1px;
+                text-align: center;
+                width: 330px;
+                padding: 10px;
+            }
+            #sign_up{
+                font-size: 10px;
+            }
+            #register{
+                color: rgb(45, 166, 236);
+                cursor: pointer;
+            }
+            #setup{
+                font-size: 10px;
+                position: absolute;
+                left: 1080px;
+                bottom: 330px;
+            }
+            .logos{
+                position: absolute;
+                left: 1020px;
+                bottom: 270px;
+                cursor: pointer;
+            }
+            .google{
+                left: 1165px;
+            }
+            #desc{
+                position: absolute;
+                text-align: center;
+                left: 450px;
+                bottom: 30px;
+                font-size: 10px;
+                word-spacing: 15px;
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            .word{
+                word-spacing: 1px;
+            }
+            .not{
+                cursor: text;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="screen" src="Безымянный1.png" alt="Снимок экрана">
+        <footer id="log">
+            <img id="logo" src="Безымянный4.png" alt="Insta logo">
+            <p class="login">Телефон, имя пользователя или эл. а...</p>
+            <p class="login password">Пароль</p>
+            <button class="login enter">Войти</button>
+            <hr class="line"></hr>
+            <p id="or">или</p>
+            <hr class="line second"></hr>
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522vbxtdk1hlyselx2hn9i9ned1cj6ks53h6k8b01wy1u0t1by72s0%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dru_
+            RU%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D32dded4b-cbce-42ee-afea-da4962c85ef9%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522vbxtdk1hlyselx2hn9i9ned1cj6ks53h6k8b01wy1u0t1by72s0%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ru
+            _RU&pl_dbl=0"><img id="facebook" src="Безымянный5.png" alt="Login via facebook"></a>
+            <p id="forget">Забыли пароль?</p>
+        </footer>
+        <footer id="under_logo">
+            <p id="sign_up">У вас ещё нет аккаунта? <span id="register"><strong>Зарегистрироваться</strong></span></p>
+        </footer>
+        <p id="setup">Установите приложение.</p>
+        <img class="logos" src="Безымянный2.png" alt="AppStore logo">
+        <img class="logos google" src="Безымянный3.png" alt="GooglePlay">
+        <p id="desc">Meta
+            Информация
+            Блог
+            Вакансии
+            Помощь
+            API
+            Конфиденциальность
+            Условия
+            <span class="word">Популярные аккаунты</span>
+            Хэштеги
+            Места
+            <span class="word">Instagram Lite</span> <br> <br>
+            Красота
+            Танцы
+            Фитнес
+            <span class="word">Еда и напитки</span>
+            <span class="word">Дом и сад</span>
+            Музыка
+            <span class="word">Изобразительное искусство</span><br><br><br>
+
+            Русский⮟ <span class="word not">© 2022 Instagram from Meta</span></p>
+
+    </body>
+</html>
