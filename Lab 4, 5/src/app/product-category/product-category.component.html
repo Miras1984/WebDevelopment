@@ -1,0 +1,43 @@
+<h1>Products in this catigory</h1>
+
+<div class='product' *ngFor='let item of items'>
+  <a [title]="item.name + 'description'"
+  [routerLink]="['/categories', item.category, 'products', item.id]">
+    {{ item.name }}
+  </a>
+
+
+  <p *ngIf='item.image'>
+    <img src='{{ item.image }}' width='30%'>
+  </p>
+
+  <p *ngIf="item.description">
+    Description: {{ item.description }}
+  </p>
+  <p *ngIf='item.rating'>
+    Rating: {{ item.rating }} / 5
+  </p>
+
+  <a href='https://web.telegram.org/z/'>
+    <button>
+    Share 
+    </button>
+  </a>
+
+
+  <p>
+    <button class='like' (click)='AddLike(item)'>
+      Like !
+    </button>
+    <button class='likes'>
+      Number of likes {{ item.NumberLikes }}
+    </button>
+  </p>
+
+  <app-product-alerts
+    [product]="item"
+    (notify)="onNotify()">
+  </app-product-alerts>
+
+  <button class='del' (click)='delete(item)'>Delete</button>
+</div>

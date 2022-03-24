@@ -1,0 +1,14 @@
+.category{
+  border: solid;
+  border-color: gold;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(59, 92, 21);
+  width: 1800px;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

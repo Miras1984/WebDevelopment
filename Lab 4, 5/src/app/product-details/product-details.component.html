@@ -1,0 +1,8 @@
+<h2>Product Details</h2>
+
+<div class='prod' *ngIf="product">
+  <a *ngIf='product' href='{{ product.link }}'><h3>{{ product.name }}</h3></a>
+  <img id='gallery' *ngFor='let pic of product.gallery' src='{{ pic }}'>
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+</div>
