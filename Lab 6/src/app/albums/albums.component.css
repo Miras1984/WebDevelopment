@@ -1,0 +1,9 @@
+.album{
+    margin: 15px;
+}
+
+.delete{
+    background-color: red;
+    position: absolute;
+    margin-left: 20px;
+}
